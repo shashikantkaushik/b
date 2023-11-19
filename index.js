@@ -30,6 +30,10 @@ mongoose
     console.log(e);
   });
 
+userRouter.get("/api/hello", auth, async (req, res) => {
+  res.send("hello");
+});
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`connected at port ${PORT}`);
 });
