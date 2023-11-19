@@ -30,7 +30,7 @@ mongoose
     console.log(e);
   });
 
-userRouter.get("/api/hello", auth, async (req, res) => {
+app.get("/api/hello", auth, async (req, res) => {
   res.send("hello");
 });
 
