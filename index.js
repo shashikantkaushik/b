@@ -30,7 +30,9 @@ mongoose
     console.log(e);
   });
 
-
+app.get('/hello',(req,res)=>{
+res.send("hello");
+});
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`connected at port ${PORT}`);
